@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reservations — OHM MULTI SERVICES LDA</title>
+  <meta name="description" content="Book a service with OHM Multi Services LDA. Choose service, date and time.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="alternate" hreflang="en" href="https://example.com/ohm-mvp/en/reservations.html">
+  <link rel="alternate" hreflang="pt" href="https://example.com/ohm-mvp/pt/reservations.html">
+  <link rel="canonical" href="https://example.com/ohm-mvp/en/reservations.html">
+  <meta property="og:locale" content="en_US">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"OHM MULTI SERVICES LDA","telephone":"+258866790636","email":"ohm.service.lda@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Chimoio, Vila Nova","addressCountry":"MZ"},"openingHours":"Mo-Fr 08:00-18:00","areaServed":["Chimoio","Beira","Tete"]}</script>
+</head>
+<body>
+  <header class="header">
+    <div class="container top">
+      <div class="logo"><a href="index.html"><img src="../assets/img/logo.svg" alt="OHM MULTI SERVICES LDA"></a></div>
+      <nav aria-label="Main menu">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="reservations.html">Reservations</a>
+        <a href="contact.html">Contact</a>
+        <a style="margin-left:12px;" href="../pt/reservations.html" aria-label="Versão em Português">PT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Book a Service</h1>
+    <p>Please complete the form below. Working hours: 08:00 — 18:00.</p>
+
+    <form class="reservation-form" action="#" method="post">
+      <label for="service">Service</label>
+      <select id="service" name="service" required>
+        <option>CCTV Installation</option>
+        <option>Electro fences</option>
+        <option>DSTV / Antennas / Panels</option>
+        <option>AC Cleaning / Maintenance</option>
+        <option>Residential electrical installation</option>
+        <option>Electronic Projects</option>
+        <option>TV Maintenance</option>
+        <option>General electronic repairs</option>
+      </select>
+
+      <label for="res-date">Date</label>
+      <input id="res-date" name="date" type="date" required>
+
+      <label for="res-time">Time</label>
+      <select id="res-time" name="time" required></select>
+
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" required>
+
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Notes</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <input type="hidden" name="source" value="site-reservation-en">
+      <button class="cta" type="submit">Submit</button>
+    </form>
+
+  </main>
+
+  <footer class="footer"><div class="container"><div class="col">Contact: +258 866 790 636</div></div></footer>
+  <div class="flota-whatsapp"><a aria-label="Contact via WhatsApp" href="https://wa.me/258866790636">💬</a></div>
+
+  <script src="../assets/js/calendar.js"></script>
+  <script src="../assets/js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "OHM MULTI SERVICES LDA",
+  "short_name": "OHM",
+  "start_url": "/ohm-mvp/pt/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0B5FFF",
+  "icons": [
+    {"src": "assets/img/logo.svg", "sizes": "400x80", "type": "image/svg+xml"}
+  ]
+}

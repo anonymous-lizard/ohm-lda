@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reservas — OHM MULTI SERVICES LDA</title>
+  <meta name="description" content="Agende um serviço com a OHM Multi Services LDA. Escolha serviço, data e hora.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="alternate" hreflang="pt" href="https://example.com/ohm-mvp/pt/reservations.html">
+  <link rel="alternate" hreflang="en" href="https://example.com/ohm-mvp/en/reservations.html">
+  <link rel="canonical" href="https://example.com/ohm-mvp/pt/reservations.html">
+  <meta property="og:locale" content="pt_MZ">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"OHM MULTI SERVICES LDA","telephone":"+258866790636","email":"ohm.service.lda@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Chimoio, Vila Nova","addressCountry":"MZ"},"openingHours":"Mo-Fr 08:00-18:00","areaServed":["Chimoio","Beira","Tete"]}</script>
+</head>
+<body>
+  <header class="header">
+    <div class="container top">
+        <div class="logo"><a href="index.html"><img src="../assets/img/logo.svg" alt="OHM MULTI SERVICES LDA"></a></div>
+        <nav aria-label="Menu principal">
+          <a href="index.html">Início</a>
+          <a href="services.html">Serviços</a>
+          <a href="reservations.html">Reservas</a>
+          <a href="contact.html">Contacto</a>
+          <a style="margin-left:12px;" href="../en/reservations.html" aria-label="English version">EN</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Agendar Serviço</h1>
+    <p>Preencha o formulário abaixo. Horário de atendimento: 08:00 — 18:00.</p>
+
+    <form class="reservation-form" action="#" method="post">
+      <label for="service">Serviço</label>
+      <select id="service" name="service" required>
+        <option value="Instalação de câmeras (CCTV)">Instalação de câmeras (CCTV)</option>
+        <option value="Electro fences">Electro fences</option>
+        <option value="DSTV / Antenas / Painéis">DSTV / Antenas / Painéis</option>
+        <option value="Limpeza / manutenção de ar condicionado">Limpeza / manutenção de ar condicionado</option>
+        <option value="Instalação residencial (eléctrica)">Instalação residencial (eléctrica)</option>
+        <option value="Projectos eletrónicos">Projectos eletrónicos</option>
+        <option value="Manutenção de TV">Manutenção de TV</option>
+        <option value="Reparos eletrónicos diversos">Reparos eletrónicos diversos</option>
+      </select>
+
+      <label for="res-date">Data</label>
+      <input id="res-date" name="date" type="date" required>
+
+      <label for="res-time">Hora</label>
+      <select id="res-time" name="time" required>
+        <!-- options populated by calendar.js -->
+      </select>
+
+      <label for="name">Nome completo</label>
+      <input id="name" name="name" type="text" required>
+
+      <label for="phone">Telefone</label>
+      <input id="phone" name="phone" type="tel" required>
+
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="email" required>
+
+      <label for="message">Mensagem / Observações</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <input type="hidden" name="source" value="site-reserva-pt">
+      <button class="cta" type="submit">Enviar pedido</button>
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="col">Contacto: +258 866 790 636 — ohm.service.lda@gmail.com</div>
+    </div>
+  </footer>
+
+  <div class="flota-whatsapp"><a aria-label="Contactar via WhatsApp" href="https://wa.me/258866790636">💬</a></div>
+
+  <script src="../assets/js/calendar.js"></script>
+  <script src="../assets/js/forms.js"></script>
+</body>
+</html>
